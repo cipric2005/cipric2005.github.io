@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="..\css\style.css">
   
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/7dcb1b6dae.js" crossorigin="anonymous"></script>
@@ -22,6 +22,10 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
             <a class="navbar-brand" href="#">Ciprian</a>
+            <div class="container form-check form-switch d-flex justify-content-end col-sm-6 mt-1">
+                <input class="form-check-input opacity-10 bg-dark border border-dark me-2" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked onclick="toggleLightDark()">
+                <label class="form-check-label text-white ms-1" for="flexSwitchCheckDefault">Dark/Light</label>
+            </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,7 +47,6 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </nav>
@@ -266,15 +269,16 @@
                 <div class="col-lg-6">
                     
                     <!-- form fields -->
-                    <form>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                    <form name="firstForm" method="post">
+                        <input type="text" class="form-control" name="nume" placeholder="Name">
+                        <input type="email" class="form-control mt-3" name="email" placeholder="Email">
+                        <input type="text" class="form-control mt-3" name="subject" placeholder="Subject">
                         <div class="mb-3 mt-3">
                             <textarea class="form-control" rows="7" id="comment" name="text" placeholder="Your message"></textarea>
                         </div>
                     </form>
-                    <button type="button" class="btn btn-success mt-3">Submit</button>                    
+                    <!-- <div class="form-check form-switch"> -->
+                    <button type="button" class="btn btn-success mt-3" onclick="return validateForm()">Submit</button> 
                 </div>
 
             </div>
@@ -296,6 +300,7 @@
 
     <!-- javascript load -->
     <script src="script/script.js"></script>
+    <script src="script/validation.js"></script>
 
 </body>
 

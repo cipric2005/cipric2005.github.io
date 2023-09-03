@@ -18,3 +18,23 @@ navLinks.forEach((l) => {
     l.addEventListener('click', () => 
     { new bootstrap.Collapse(menuToggle).toggle() })
 })
+
+// toggle between page light/dark mode
+
+function toggleLightDark() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+    
+    let element1 = document.getElementsByClassName("card-body");    
+    for (let elem of element1) {
+        elem.classList.toggle("dark-mode");
+        elem.classList.toggle("text-white");
+    }
+
+    let element2 = document.getElementsByClassName("form-control");
+    for (let elem of element2) {
+        elem.classList.toggle("dark-mode");
+        elem.classList.toggle("text-white");
+    }
+ }
+ 
