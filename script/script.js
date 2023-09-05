@@ -24,17 +24,20 @@ navLinks.forEach((l) => {
 function toggleLightDark() {
     let element = document.body;
     element.classList.toggle("dark-mode");
-    
-    let element1 = document.getElementsByClassName("card-body");    
+
+    forceBstoggleLightDark("card-body");
+    forceBstoggleLightDark("form-control");
+    // forceBstoggleLightDark("btn-close");
+    forceBstoggleLightDark("btn-success");
+
+ }
+
+// force some Bottstrap classes to toggle between page light/dark mode
+
+function forceBstoggleLightDark(btsClass) {
+    let element1 = document.getElementsByClassName(btsClass);
     for (let elem of element1) {
         elem.classList.toggle("dark-mode");
         elem.classList.toggle("text-white");
     }
-
-    let element2 = document.getElementsByClassName("form-control");
-    for (let elem of element2) {
-        elem.classList.toggle("dark-mode");
-        elem.classList.toggle("text-white");
-    }
- }
- 
+}

@@ -39,10 +39,19 @@
     width: 84%;
 }
 
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* services section styling */
+
 .servicesText.card {
     height: 280px;
-    cursor: pointer;
   }
 .servicesIcon {
     font-size: 36px;
@@ -57,6 +66,28 @@
 }
 .servicesText:hover {
     border: 2px solid #008000;
+}
+
+.card .fas.fa-arrow-right {
+    position: absolute;
+    bottom: -100px;
+    left: 45%;
+    background-color: #4e9525;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: gold;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .fas.fa-arrow-right {
+    bottom: 0px;
+    opacity: 1;
 }
 
 /* contact icons styling */
@@ -78,16 +109,35 @@
 
 /* dark-mode styling */
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: black !important;
+    color: white !important;
 }
 
 .dark-mode .form-control::placeholder {
     color: white !important;
 }
 
-.dark-mode .form-control {
+.dark-mode .modal-content {
     background-color: black !important;
     color: white !important;
 }
 
+.dark-mode .btn-success {
+    background-color: cyan !important;
+    color: darkblue !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: cyan !important;
+    color: darkblue !important;
+}
+
+.dark-mode .btn-close {
+    background-color: cyan !important;
+    color: transparent !important;
+}
+
+.dark-mode .card {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+}
