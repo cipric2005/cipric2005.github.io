@@ -52,6 +52,7 @@
 
 .servicesText.card {
     height: 280px;
+    transition: background-color 1s;
   }
 .servicesIcon {
     font-size: 36px;
@@ -64,8 +65,9 @@
 .card:hover .servicesIcon {
     color: #008000;
 }
-.servicesText:hover {
+.card:hover {
     border: 2px solid #008000;
+    background-color: lightcyan;
 }
 
 .card .fas.fa-arrow-right {
@@ -88,6 +90,10 @@
 .card:hover .fas.fa-arrow-right {
     bottom: 0px;
     opacity: 1;
+}
+
+.portfolioContent:hover {
+    transform: scale(1.025,1.025);
 }
 
 /* contact icons styling */
