@@ -64,14 +64,12 @@
     </section>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal fade" id="exampleModal1">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Project 1 - Features</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title">Project 1 - Features</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     These section will contain description and detailed information about the Project 1.
@@ -83,14 +81,12 @@
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal2" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal fade" id="exampleModal2">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Project 2 - Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title">Project 2 - Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     Here I will mention detailed steps and information about the Project 2.                </div>
@@ -101,14 +97,12 @@
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal3" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal fade" id="exampleModal3">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Project 3 - Innovation</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title">Project 3 - Innovation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     Latest technology details used on this project will appear here.
@@ -122,15 +116,16 @@
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4">
+        <div class="container mt-2">
             <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
+            <div class="d-flex flex-row justify-content-center align-items-center flex-wrap
+             mt-4">
+                <div class="col-lg-4 mb-4 flex-grow-1 flex-md-fill">
                     <img src="images/aboutme.jpeg" class= "imageAboutPage" 
                     alt="Ciprian's photo">
                 </div>
 
-                <div class="col-lg-8">
+                <div class="col-lg-8 flex-md-fill">
                     <p> Salut, sunt Ciprian, un tanar Junior Web Dev, cu peste 25 de ani 
                         de experienta in vanzari si business development. Sunt pasionat 
                         de ceea ce lucrez, am crescut profesional dezvoltand cateva 
@@ -141,14 +136,14 @@
                         reusesc sa inteleg foarte usor valorile de business.                        
                     </p>
                     <div class="row mt-3 pt-3">
-                        <div class="col-md-6">
+                        <div class="col-md-5">
                             <ul>
                                 <li>Name: Ciprian Cojocariu</li>
                                 <li>Age: 48</li>
                                 <li>Occupation: Web Developer</li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-7">
                             <ul>
                                 <li>Languages: HTML, CSS, JavaScript, Java </li>
                                 <li>Dev Tools: Bootstrap, Github</li>
@@ -156,25 +151,28 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="row mt-3">
-                        <p> Odata pornit catre acest nou domeniu – Web Development, voi putea creste
-                             repede profesional si crea aplicatii utile care sa incante utilizatorii. 
-                             De la construire site-uri de prezentare, la magazine online, integrari, 
-                             optimizari de procese sau SEO – acestea sunt domeniile in care imi pot 
-                             valorifica rapid experienta profesionala. In plus, voi continua sa
-                             dezvolt si sa aplic noile aptitudini de developer, dobandite mai recent.
-                        </p>
-                    </div>
+
+                </div>
+                <div class="row mt-2">
+                    <p> Odata pornit catre acest nou domeniu – Web Development, voi putea creste
+                         repede profesional si crea aplicatii utile care sa incante utilizatorii. 
+                         De la construire site-uri de prezentare, la magazine online, integrari, 
+                         optimizari de procese sau SEO – acestea sunt domeniile in care imi pot 
+                         valorifica rapid experienta profesionala. In plus, voi continua sa
+                         dezvolt si sa aplic noile aptitudini de developer, dobandite mai recent.
+                    </p>
                 </div>
             </div>
     </section>
 
     <!-- services section-->
     <section id="services">
-        <div class="container mt-4">
+        <div class="container mt-2">
             <h1 class="text-center">Services</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
+            <div class="d-flex flex-row justify-content-center flex-wrap 
+            align-items-center mt-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class="fa-solid fa-clock servicesIcon"></i>
@@ -188,7 +186,8 @@
                         </div>
                     </div>  
                 </div>
-                <div class="col-lg-4 mt-4">
+
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class='fa-solid fa-layer-group servicesIcon'></i>
@@ -200,7 +199,7 @@
                     </div>  
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class='fa-solid fa-search servicesIcon'></i>
@@ -213,11 +212,8 @@
                         </div>
                     </div>  
                 </div>
-            </div>
-
-            <div class="row mt-4">
                 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class='fa-solid fa-wrench servicesIcon'></i>
@@ -230,7 +226,7 @@
                     </div>  
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class='fa fa-puzzle-piece servicesIcon'></i>
@@ -244,7 +240,7 @@
                     </div>  
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="card servicesText rounded-3">
                         <div class="card-body">
                             <i class='fa-solid fa-people-arrows servicesIcon'></i>
@@ -257,7 +253,6 @@
                         </div>
                     </div>  
                 </div>
-
             </div>
         </div>
     </section>
@@ -266,8 +261,9 @@
     <section id="portfolio">
         <div class="container mt-3">
             <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
+            <div class="d-flex flex-row justify-content-center flex-wrap 
+            align-items-center mt-4">
+                <div class="col-lg-4">
                     <div class="card portfolioContent">
                         <a data-bs-toggle="modal" href="#" data-bs-target="#exampleModal1">
                             <img class="card-img-top" src="images/portfolioImage.jpg" alt="Project1 image" style="width:100%">
@@ -284,7 +280,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4">
                     <div class="card portfolioContent">
                         <a data-bs-toggle="modal" href="#" data-bs-target="#exampleModal2">
                             <img class="card-img-top" src="images/portfolioImage.jpg" alt="Project1 image" style="width:100%">
@@ -301,7 +297,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4">
                     <div class="card portfolioContent">
                         <a data-bs-toggle="modal" href="#" data-bs-target="#exampleModal3">
                             <img class="card-img-top" src="images/portfolioImage.jpg" alt="Project1 image" style="width:100%">
@@ -326,11 +322,12 @@
         <div class="container mt-3 contactContent">
             <h1 class="text-center">Contact Me</h1>
 
-            <div class="row mt-4">
-                <div class="col-lg-6">
+            <div class="d-flex flex-row justify-content-center flex-wrap 
+            align-items-top flex-fill mt-4">
 
+                <div class="me-4">
                     <!-- embeded google map  -->
-                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                    <div class="mb-2 mt-3" style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
                         <div id="google-maps-display" style="height:100%; width:100%;max-width:100%;">
                             <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Strada+Donath+192,+Cluj-Napoca,+România&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
                             </iframe>
@@ -341,10 +338,9 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6">
-                    
+                <div class="flex-grow-1">                  
                     <!-- form fields -->
-                    <form name="firstForm" method="post">
+                    <form name="firstForm" method="post" class="mt-3">
                         <input type="text" class="form-control" name="nume" placeholder="Name">
                         <input type="email" class="form-control mt-3" name="email" placeholder="Email">
                         <input type="text" class="form-control mt-3" name="subject" placeholder="Subject">
@@ -352,7 +348,6 @@
                             <textarea class="form-control" rows="7" id="comment" name="text" placeholder="Your message"></textarea>
                         </div>
                     </form>
-                    <!-- <div class="form-check form-switch"> -->
                     <button type="button" class="btn btn-success mt-3" onclick="return validateForm()">Submit</button> 
                 </div>
 

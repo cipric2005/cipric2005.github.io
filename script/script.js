@@ -27,7 +27,6 @@ function toggleLightDark() {
 
     forceBstoggleLightDark("card-body");
     forceBstoggleLightDark("form-control");
-    // forceBstoggleLightDark("btn-close");
     forceBstoggleLightDark("btn-success");
 
  }

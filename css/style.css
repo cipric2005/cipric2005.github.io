@@ -28,15 +28,16 @@
 
 /* top spacing for more sections styling */
 #about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 3rem;
+    padding-top: 3rem;
 }
 #contact {
     padding-bottom: 4rem;
 }
+
 /* image in "about" section styling */
 .imageAboutPage {
-    width: 84%;
+    max-width: 84%;
 }
 
 .card {
@@ -51,8 +52,16 @@
 /* services section styling */
 
 .servicesText.card {
-    height: 280px;
+    height: 340px;
+    min-width: 300px;
+    margin: 10px 10px 10px 10px;
     transition: background-color 1s;
+  }
+
+  .portfolioContent.card {
+    max-height: 600px;
+    min-width: 300px;
+    margin: 10px 10px 10px 10px;
   }
 .servicesIcon {
     font-size: 36px;
@@ -140,7 +149,7 @@
 
 .dark-mode .btn-close {
     background-color: cyan !important;
-    color: transparent !important;
+    /* color: transparent !important; */
 }
 
 .dark-mode .card {
