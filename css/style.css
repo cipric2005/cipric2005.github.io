@@ -37,7 +37,14 @@
 
 /* image in "about" section styling */
 .imageAboutPage {
-    max-width: 84%;
+    max-width: 82%;
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
 }
 
 .card {
@@ -54,7 +61,7 @@
 .servicesText.card {
     height: 340px;
     min-width: 300px;
-    margin: 10px 10px 10px 10px;
+    margin: 15px 10px 15px 10px;
     transition: background-color 1s;
   }
 
